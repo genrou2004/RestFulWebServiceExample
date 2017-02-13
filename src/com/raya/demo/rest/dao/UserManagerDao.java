@@ -1,0 +1,18 @@
+package com.raya.demo.rest.dao;
+
+import java.util.List;
+
+import com.raya.demo.rest.model.User;
+
+public interface UserManagerDao
+{
+	public User fetchUserById(Integer id);
+
+	public List<User> fetchAllUsers();
+
+	public void insertUser(User user);
+
+	public void updateUser(User user);
+
+	public void deleteUser(User user);
+}
